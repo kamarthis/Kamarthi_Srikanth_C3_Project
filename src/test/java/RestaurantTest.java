@@ -64,4 +64,13 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    @Test
+    public void get_selectedItems_Value(){
+        ArrayList<String> Items = new ArrayList<String>();
+        Items.add("Sweet corn soup");
+        Items.add("Vegetable lasagne");
+        assertEquals(388,restaurant.getOrdersValue(Items));
+    }
+
 }
